@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>امیررضا باباپور</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
+  <script>document.documentElement.classList.add('motion-ready');</script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      background-color: #000;
+      background-image: radial-gradient(ellipse at 50% 25%, #07152b 0%, #02040a 55%, #000 100%);
+      color: #eef6ff;
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    /* قاب نئون آبی دور کل صفحه */
+    .page-border {
+      position: fixed;
+      inset: 10px;
+      border: 2.5px solid #214bb3;
+      border-radius: 20px;
+      box-shadow: 0 0 12px rgba(29, 78, 216, 0.65), inset 0 0 8px rgba(20, 57, 137, 0.4);
+      pointer-events: none;
+      z-index: 20;
+    }
+
+    /* اسکلت ترسناک آبی و مشکی بالا سمت راست - بدون پس‌زمینه */
+    .skull {
+      position: fixed;
+      top: 18px;
+      right: 18px;
+      width: 115px;
+      height: 115px;
+      z-index: 30;
+      pointer-events: none;
+    }
+
+    @media (max-width: 480px) {
+      .skull {
+        width: 92px;
+        height: 92px;
+        top: 15px;
+        right: 15px;
+      }
+    }
+
+    /* بخش اصلی نوشته‌ها */
+    .wrapper {
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+      padding: 36px 14px 16px;
+      z-index: 10;
+    }
+
+    /* ۱. درود - بزرگ‌تر از بقیه */
+    .hello {
+      font-family: 'Lalezar', 'Vazirmatn', sans-serif;
+      font-size: 3.6rem;
+      line-height: 1.15;
+      color: #ffffff;
+      text-shadow: 0 0 14px #2563eb;
+      margin-bottom: 14px;
+    }
+
+    /* ۲. معرفی - پایین‌تر و کوچک‌تر */
+    .bio {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: #93c5fd;
+      line-height: 1.7;
+      margin-bottom: 26px;
+    }
+
+    /* ۳. کادر جداگانه پایین برای شماره تلفن */
+    .phone-card {
+      background-color: #030916;
+      border: 2px solid #1b3f9b;
+      border-radius: 16px;
+      padding: 18px 16px;
+      margin-bottom: 22px;
+      box-shadow: 0 0 14px rgba(29, 78, 216, 0.35);
+    }
+
+    .phone-card p {
+      font-size: 1.12rem;
+      font-weight: 900;
+      line-height: 1.9;
+      color: #f0f7ff;
+    }
+
+    .num {
+      color: #3b82f6;
+      direction: ltr;
+      display: inline-block;
+      font-weight: 900;
+    }
+
+    /* ۴. ایمیل پایین‌تر و کوچک‌تر */
+    .email {
+      font-size: 0.92rem;
+      font-weight: 800;
+      color: #60a5fa;
+      direction: ltr;
+      letter-spacing: 0.3px;
+      word-break: break-all;
+    }
+
+    /* Reveal the messages in reading order without a continuous animation. */
+    @media (prefers-reduced-motion: no-preference) {
+      .motion-ready .reveal {
+        animation: reveal-down 850ms cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+
+      .motion-ready .bio { animation-delay: 600ms; }
+      .motion-ready .phone-card { animation-delay: 1200ms; }
+      .motion-ready .email { animation-delay: 1800ms; }
+    }
+
+    @keyframes reveal-down {
+      from { opacity: 0; transform: translateY(-16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- نئون آبی دور صفحه -->
+  <div class="page-border"></div>
+
+  <!-- اسکلت ترسناک آبی و مشکی بالا سمت راست (بدون پس‌زمینه) -->
+  <svg class="skull" viewBox="0 0 260 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="darkBlue" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#477dd2"/>
+        <stop offset="50%" stop-color="#1b49ad"/>
+        <stop offset="100%" stop-color="#07183f"/>
+      </linearGradient>
+    </defs>
+
+    <!-- دو استخوان متقاطع پشت جمجمه -->
+    <g fill="url(#darkBlue)" stroke="#02050c" stroke-width="5" stroke-linejoin="round">
+      <path d="M 28,42 C 12,32 6,50 18,62 C 8,72 22,86 38,74 L 214,172 C 226,184 244,172 234,158 C 248,150 238,132 222,144 L 46,46 Z"/>
+      <path d="M 232,42 C 248,32 254,50 242,62 C 252,72 238,86 222,74 L 46,172 C 34,184 16,172 26,158 C 12,150 22,132 38,144 L 214,46 Z"/>
+    </g>
+
+    <!-- خطوط هاشور سیاه روی استخوان‌ها -->
+    <g stroke="#02050c" stroke-width="3" stroke-linecap="round">
+      <line x1="34" y1="58" x2="54" y2="70"/>
+      <line x1="46" y1="65" x2="64" y2="75"/>
+      <line x1="226" y1="58" x2="206" y2="70"/>
+      <line x1="214" y1="65" x2="196" y2="75"/>
+      <line x1="44" y1="154" x2="62" y2="144"/>
+      <line x1="216" y1="154" x2="198" y2="144"/>
+    </g>
+
+    <!-- جمجمه اصلی با گونه و فک خشن -->
+    <path fill="url(#darkBlue)" stroke="#02050c" stroke-width="5.5" stroke-linejoin="round"
+      d="M 130,18
+         C 84,18 64,48 68,88
+         C 62,98 60,112 70,120
+         C 78,126 83,130 85,140
+         L 89,168
+         C 92,186 108,198 130,198
+         C 152,198 168,186 171,168
+         L 175,140
+         C 177,130 182,126 190,120
+         C 200,112 198,98 192,88
+         C 196,48 176,18 130,18 Z"/>
+
+    <!-- ترک عمیق و ترسناک روی پیشانی -->
+    <path d="M 122,19 L 128,34 L 119,45 L 129,57 L 125,72 L 133,82"
+          fill="none" stroke="#02050c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 128,34 L 139,41 M 119,45 L 108,52 M 129,57 L 140,63"
+          fill="none" stroke="#02050c" stroke-width="3.2" stroke-linecap="round"/>
+
+    <!-- خطوط اخم بالای چشم‌ها -->
+    <path d="M 78,76 Q 98,68 118,84 M 182,76 Q 162,68 142,84"
+          fill="none" stroke="#02050c" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- حفره چشم‌های سیاه و خشن (زاویه‌دار) -->
+    <path fill="#02050c" d="M 78,90 C 78,77 98,75 114,88 C 118,94 113,110 96,111 C 81,112 76,102 78,90 Z"/>
+    <path fill="#02050c" d="M 182,90 C 182,77 162,75 146,88 C 142,94 147,110 164,111 C 179,112 184,102 182,90 Z"/>
+
+    <!-- حفره بینی تیز -->
+    <path fill="#02050c" d="M 130,98 L 119,124 L 127,121 L 130,126 L 133,121 L 141,124 Z"/>
+
+    <!-- فرو رفتگی استخوان گونه‌ها -->
+    <path d="M 73,112 C 83,118 88,128 89,140 M 187,112 C 177,118 172,128 171,140"
+          fill="none" stroke="#02050c" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- دهان باز سیاه و ترسناک -->
+    <path fill="#02050c" d="M 92,136 C 110,144 150,144 168,136 C 172,160 158,184 130,184 C 102,184 88,160 92,136 Z"/>
+
+    <!-- دندان‌های تیز بالا -->
+    <g fill="#4a83d9" stroke="#02050c" stroke-width="2.5" stroke-linejoin="round">
+      <polygon points="96,136 105,138 101,153"/>
+      <polygon points="105,138 116,140 111,157"/>
+      <polygon points="116,140 130,141 123,160"/>
+      <polygon points="130,141 144,140 137,160"/>
+      <polygon points="144,140 155,138 149,157"/>
+      <polygon points="155,138 164,136 159,153"/>
+    </g>
+
+    <!-- دندان‌های تیز پایین -->
+    <g fill="#2f65c6" stroke="#02050c" stroke-width="2.5" stroke-linejoin="round">
+      <polygon points="100,174 109,177 105,161"/>
+      <polygon points="109,177 120,180 115,163"/>
+      <polygon points="120,180 130,181 125,164"/>
+      <polygon points="130,181 140,180 135,164"/>
+      <polygon points="140,180 151,177 145,163"/>
+      <polygon points="151,177 160,174 155,161"/>
+    </g>
+  </svg>
+
+  <!-- محتوای اصلی -->
+  <main class="wrapper">
+    <h1 class="hello reveal">درود👋🏼</h1>
+
+    <p class="bio reveal">🙋‍♂️من امیررضا باباپورم ، 11 شبکه🖥</p>
+
+    <div class="phone-card reveal">
+      <p>شماره تلفنم : <span class="num">09331014949</span> , کار داشتی پیام بده زنگ نزن جواب نمیدم👾</p>
+    </div>
+
+    <p class="email reveal">amirrezababapor73@gmail.com</p>
+  </main>
+
+</body>
+</html>
